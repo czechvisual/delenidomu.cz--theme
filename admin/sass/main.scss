@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixins";
+@import "colors";
+
+.theme-info .parent-theme,
+#et_dashboard_logo::before,
+#footer-thankyou,
+.metabox-holder .postbox-container .empty-container:after {
+  display: none !important;
+}
+
+.metabox-holder .postbox-container .empty-container {
+  border: none;
+}
+
+#dashboard-widgets-wrap .postbox::after {
+  content: '';
+}
+
+#adminmenu li.wp-menu-separator {
+  height: 1px;
+  background: #313c46;
+  margin: 8px;
+}
+
+input#post_name {
+  width: 100%;
+}
+
+#adminmenu a {
+  text-shadow: none;
+}
+
+#adminmenu .wp-submenu-head, #adminmenu a.menu-top {
+  font-weight: 700;
+}
+
+#adminmenu li.wp-has-current-submenu div.wp-menu-image {
+  &:before {
+    color: $base-color;
+  }
+}
+
+.wp-core-ui .button {
+  border-color: $base-color !important;
+  color: $base-color !important;
+  font-weight: 700 !important;
+}
+
+#all-plugins-table .plugins a.delete, #delete-link a.delete,
+#media-items a.delete,
+#media-items a.delete-permanently,
+#nav-menu-footer .menu-delete,
+#search-plugins-table .plugins a.delete,
+.plugins a.delete,
+.privacy_requests .remove-personal-data .remove-personal-data-handle,
+.row-actions span.delete a,
+.row-actions span.spam a,
+.row-actions span.trash a,
+.submitbox .submitdelete,
+a#remove-post-thumbnail {
+  color: $notification-color !important;
+}
+
+.theme-name {
+  font-weight: 700 !important;
+  color: $base-color !important;
+}

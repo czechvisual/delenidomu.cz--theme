@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+  background-color: $primary;
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .15;
+    z-index: 0;
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  p {
+    padding: 0 0 3rem;
+    font-size: var(--font-size-18);
+    color: $white;
+    opacity: .75;
+
+    @include media-queries-up(xxl) {
+      max-width: 70%;
+    }
+  }
+
+  .container {
+    @include flex ($direction: column, $justify: center, $align: center);
+
+    position: relative;
+    padding: 3rem;
+    height: 95vh;
+    text-align: center;
+    z-index: 1;
+
+    @include media-queries-up(md) {
+      height: 30rem;
+      max-width: 80%;
+    }
+
+    @include media-queries-up(xxl) {
+      @include flex ($direction: column, $justify: center, $align: flex-start);
+
+      padding: 3rem 0;
+      text-align: left;
+    }
+  }
+}

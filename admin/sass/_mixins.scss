@@ -1,0 +1,49 @@
+@mixin button( $button-color, $text-color: #ffffff ) {
+  background: $button-color;
+  border: none;
+  color: $base-color;
+  font-weight: 700;
+  box-shadow: none;
+  text-shadow: none;
+  transition: all .2s ease-in !important;
+
+  &:hover,
+  &:focus {
+    background: darken( $button-color, 15% );
+    border: none;
+    color: $base-color;
+    box-shadow: none;
+    transition: all .25s ease-out !important;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active,
+  &.active,
+  &.active:focus,
+  &.active:hover {
+    background: darken( $button-color, 10% );
+    border-color: darken( $button-color, 15% );
+    box-shadow: none;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.button-primary-disabled,
+  &.disabled {
+    color: hsl( hue( $button-color ), 10%, 80% ) !important;
+    background: darken( $button-color, 8% ) !important;
+    border-color: darken( $button-color, 15% ) !important;
+    text-shadow: none !important;
+  }
+
+  &.button-hero {
+    box-shadow: 0 2px 0 darken( $button-color, 15% ) !important;
+    &:active {
+      box-shadow: inset 0 3px 0 darken( $button-color, 15% ) !important;
+    }
+  }
+
+}

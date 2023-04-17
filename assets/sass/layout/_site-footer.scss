@@ -1,0 +1,53 @@
+.site {
+  &-footer {
+    padding: 1.5rem 1rem;
+    background-color: $secondary;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+
+    .container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &-copyright {
+      text-align: center;
+      color: $primary;
+
+      @include media-queries-up(md) {
+        text-align: left;
+      }
+
+      a {
+        text-align: center;
+        color: $primary;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      img {
+        display: inline;
+        width: auto;
+        height: 1.5rem;
+        // opacity: .5;
+      }
+    }
+
+    &-menu {
+      margin-top: 1rem;
+      text-align: center;
+      color: $primary;
+
+      @include media-queries-up(md) {
+        margin-top: inherit;
+        text-align: right;
+      }
+
+      a {
+        color: $primary;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.single-page {
+  &-feature {
+    position: relative;
+    color: $typography;
+    background-color: $primary;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: .15;
+      z-index: 0;
+    }
+
+    .container {
+      @include flex ($direction: column, $justify: center, $align: center);
+
+      position: relative;
+      padding: 3rem;
+      height: 20rem;
+      text-align: center;
+      z-index: 1;
+
+      @include media-queries-up(md) {
+        text-align: left;
+        max-width: 80%;
+      }
+
+      @include media-queries-up(xxl) {
+        @include flex ($direction: column, $justify: center, $align: flex-start);
+
+        padding: 3rem 0;
+        height: 30rem;
+      }
+
+      h1 {
+        color: $white;
+      }
+    }
+  }
+
+  &-content {
+    p {
+      margin: 0;
+    }
+  }
+
+  &-info {
+    ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li a {
+        color: $primary;
+      }
+    }
+
+    .category,
+    .date,
+    .author {
+      padding: .5rem 0;
+    }
+
+    .author {
+      a {
+        color: $primary;
+      }
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}

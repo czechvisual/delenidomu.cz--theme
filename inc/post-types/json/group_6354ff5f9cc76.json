@@ -1,0 +1,66 @@
+{
+    "key": "group_6354ff5f9cc76",
+    "title": "Carousel",
+    "fields": [
+        {
+            "key": "field_6355060e57a4c",
+            "label": "Tlačítko",
+            "name": "button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_6355006a4e6ac",
+            "label": "Obrázek v pozadí",
+            "name": "background_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Maximální velikost souboru je 1 MB. Povolené formáty obrázků jsou .jpg a .webp.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": 1,
+            "mime_types": ".jpg, .webp",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "carousel"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Položky carouselu v úvodním hero slideru.",
+    "show_in_rest": 0,
+    "modified": 1666525121
+}

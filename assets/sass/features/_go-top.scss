@@ -1,0 +1,26 @@
+.go-top {
+  content: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 10 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;'%3E%3Cg transform='matrix(1,0,0,1,-138.015,-118.25)'%3E%3Cg id='upload.svg' transform='matrix(1,0,0,1,130.765,115)'%3E%3Cpath d='M16,8L12,4M12,4L8,8M12,4L12,16' style='fill:none;fill-rule:nonzero;stroke:%23fff;stroke-width:1.5px;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: $primary;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: 500ms opacity;
+  visibility: hidden;
+  z-index: 1;
+
+  &:hover,
+  &:focus {
+    background-color: darken($primary, 15%);
+  }
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}

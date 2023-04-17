@@ -1,0 +1,79 @@
+// CSS Variables for responsive paddings and margins
+:root {
+  // Gaps
+  --grid-gap: 4.8rem;
+
+  // Paddings
+  --padding-container-horizontal: 2rem;
+  --padding-container-horizontal-large: 6.4rem;
+  --padding-container-vertical: 6.4rem;
+  --padding-site-header-vertical: 2rem;
+  --padding-block: 8rem;
+
+  // Margins
+  --margin-between-text-elements: 4rem;
+  --margin-wp-block-image: 4rem;
+  --margin-between-paragraphs: 2.7rem;
+
+  // Mid-sized screens
+  @media (max-width: $width-grid-base + 150px) {
+    --padding-container-horizontal: 6.4rem;
+  }
+
+  // When there's no longer room for container to fit with wider white space
+  @media (max-width: 700px) {
+    --padding-container-horizontal: 2rem;
+  }
+
+  // When navigation transforms to a responsive hamburger menu
+  @media (max-width: $width-max-mobile) {
+    --padding-site-header-vertical: 2rem;
+  }
+
+  // iPad
+  @media (max-width: $container-ipad-landscape) {
+    --grid-gap: 3.2rem;
+  }
+
+  @media (max-width: $container-ipad) {
+    --grid-gap: var(--padding-container-horizontal);
+    --padding-container-vertical: 5rem;
+  }
+
+  // Between iPad and a mobile phone
+  @media (max-width: 600px) {
+    --padding-block: 6rem;
+  }
+
+  // Vars in mobile
+  @media (max-width: $container-mobile) {
+    --padding-container-vertical: 4rem;
+  }
+}
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .5),
+  2: $spacer,
+  3: ($spacer * 2),
+  4: ($spacer * 4),
+  5: ($spacer * 6)
+); $spacers: map-merge($spacers, $spacers);
+
+// Gaps
+$gap: $spacer;
+$gaps: (
+  "small":  ($gap * .5),
+  "normal": $gap,
+  "medium": ($gap * 1.5),
+  "large":  ($gap * 2),
+  "extra":  ($gap * 3)
+); $gaps: map-merge($gaps, $gaps);
+
+// Paddings
+$padding-container-h: $spacer * 2;
+$padding-container-v: $spacer * 2;
+$padding-site-header-v: $spacer * 2;
+$padding-block: $spacer * 2;

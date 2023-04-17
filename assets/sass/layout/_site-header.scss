@@ -1,0 +1,130 @@
+.site {
+  &-header {
+    @include flex($direction: row, $justify: space-between, $align: center);
+
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: $white;
+    transition: all .3s ease-in-out;
+
+    &.is-fixed {
+      position: fixed;
+      top: 0;
+      padding: 1rem;
+      width: 100%;
+      background-color: $white;
+      z-index: 900;
+    }
+
+    &.menu-opened {
+      @include flex($direction: column, $justify: center, $align: center);
+
+      position: fixed;
+      padding: 3rem;
+      height: 100vh;
+      z-index: 999;
+
+      #openIcon {
+        display: none;
+      }
+
+      #closeIcon {
+        position: absolute;
+        display: block;
+        top: 2rem;
+        right: 2rem;
+
+        @include media-queries-up(lg) {
+          display: none;
+        }
+      }
+
+      .site-navigation {
+        @include media-queries-down(md) {
+          margin-top: 3rem;
+          text-align: center;
+          display: block;
+          width: 100%;
+        }
+
+        li a {
+          padding: .5rem 1rem;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    i {
+        font-size: 2rem;
+
+        &#openIcon,
+        &#closeIcon {
+            cursor: pointer;
+
+            @include media-queries-up(md) {
+                display: none;
+            }
+        }
+
+        #closeIcon {
+            display: none;
+        }
+    }
+  }
+
+  .container {
+    &.inner {
+      @include flex($direction: row, $justify: space-between, $align: center);
+
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &-branding {
+    svg {
+      width: auto;
+      height: 2.5rem;
+    }
+  }
+
+  &-navigation {
+    @include flex ($direction: row, $justify: center, $align: flex-start);
+
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+
+    @include media-queries-down(sm) {
+      @include flex ($direction: column, $justify: flex-start, $align: flex-start);
+
+      display: none;
+      width: 100%;
+    }
+
+    li {
+      &.active {
+        border-radius: .5rem;
+        background: rgba($primary, .2);
+      }
+
+      a {
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $primary;
+        text-decoration: none;
+        border-radius: .5rem;
+        transition: all .6s ease-in-out;
+
+        &:hover {
+          color: $primary;
+          background: rgba($primary, .2);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+// Variables
+$button-color-primary: $primary;
+$button-color-secondary: $secondary;
+$button-color-tertiary: $tertiary;
+$button-color-negative: $white;
+$button-font-size: var(--font-size-14);
+$button-font-weight: bold;
+$button-text-decoration: none;
+$button-border-radius: 2rem;
+
+// Definition
+@mixin button() {
+  display: inline-block;
+  padding: .5rem 1rem;
+  text-align: center;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  text-decoration: $button-text-decoration;
+  border-radius: $button-border-radius;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+
+  &:not(:only-child),
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &.disabled,
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+.button {
+  @include button();
+
+  // sizing
+  &-wide {
+    @include flex($direction: row, $justify: center, $align: center);
+
+    width: 100%;
+  }
+
+  &-medium {
+    padding: 1rem 1rem;
+    min-width: 12rem;
+    font-size: var(--font-size-16);
+
+    @include media-queries-down(sm) {
+      width: auto;
+    }
+  }
+
+  &-small {
+    padding: .25rem .5rem;
+    font-size: 70%;
+  }
+
+  // color variations
+  @mixin buttonVariant ($name, $background) {
+    &-#{$name} {
+      color: colorContrast($background) !important;
+      background: $background;
+
+      &:hover {
+        background: darken($background, 15%);
+      }
+    }
+  }
+
+  @include buttonVariant(primary, $button-color-primary);
+  @include buttonVariant(secondary, $button-color-secondary);
+  @include buttonVariant(tertiary, $button-color-tertiary);
+  @include buttonVariant(negative, $button-color-negative);
+}

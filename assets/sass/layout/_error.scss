@@ -1,0 +1,29 @@
+.error {
+  .site-footer,
+  .site-header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+  }
+
+  .site-footer {
+    bottom: 0;
+  }
+
+  .site-header {
+    top: 0;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    p {
+      margin-top: 0;
+    }
+  }
+}

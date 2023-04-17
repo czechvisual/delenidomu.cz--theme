@@ -1,0 +1,31 @@
+{
+  "name": "acdfevelop",
+  "description": "Komplexní, individuální ACF šablona na míru pro váš web. Vytvořeno s péčí a citem &hearts",
+  "author": "Patrik Vaďura",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "14.17.0"
+  },
+  "scripts": {
+    "watch": "sass --watch assets/sass/main.scss assets/sass/dist/main.css --style compressed",
+    "watch:admin": "sass --watch admin/sass/main.scss admin/sass/dist/main.css --style compressed",
+    "lint": "npx stylelint \"**/*.scss\""
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1",
+    "lazyload": "^2.0.0-rc.2",
+    "sanitize.css": "git+https://github.com/csstools/sanitize.css.git"
+  },
+  "devDependencies": {
+    "stylelint": "^14.14.0",
+    "stylelint-config-recommended": "^8.0.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-declaration-strict-value": "^1.8.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "eslint": "^8.18.0"
+  }
+}

@@ -1,0 +1,29 @@
+// Layout widths
+$width-max-layout: 100%;
+$width-max-article: 800px;
+$width-grid-base: 1440px;
+$width-max-mobile: 960px;
+
+// Breakpoints for containers
+$container-desktop: 1200px;
+$container-ipad: 770px;
+$container-ipad-landscape: 1024px;
+$container-macbook-air: 1440px;
+$container-mobile: 480px;
+
+$breakpoints: (
+  xs: 0,
+  sm: 599px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); $breakpoints: map-merge($breakpoints, $breakpoints);
+
+$containers: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+); $containers: map-merge($containers, $containers);

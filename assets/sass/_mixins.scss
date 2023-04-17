@@ -1,0 +1,60 @@
+// Style
+@mixin shadow($color, $intensity) {
+  box-shadow: .15rem .15rem .25rem 0 rgba($color, $intensity);
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+
+  @if $direction {
+    flex-direction: $direction;
+  } @if $justify {
+    justify-content: $justify;
+  } @if $align {
+    align-items: $align;
+  }
+}
+
+//mediaQueries
+@mixin media-queries-up($name, $breakpoints: $breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-queries-down($name, $breakpoints: $breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-queries-only($name, $breakpoints: $breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  $max: breakpoint-max($name, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($name, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($name, $breakpoints) {
+      @content;
+    }
+  }
+}
