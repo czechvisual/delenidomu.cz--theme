@@ -1,16 +1,16 @@
 :root {
   --font-serif: sans-serif;
-  --font-sans: "Poppins", Arial, sans-serif;
+  --font-sans: "Objektiv Mk1", Arial, sans-serif;
   --font-monospace: "Space Mono", monospace;
   --font-paragraph: var(--font-sans);
-  --font-default: "Poppins", Arial, sans-serif;
-  --font-heading: "Poppins", Arial, sans-serif;
+  --font-default: "Objektiv Mk1", Arial, sans-serif;
+  --font-heading: "Objektiv Mk1", Arial, sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+@import url('https://res.cloudinary.com/patrik-vadura/raw/upload/v1669024185/fontFaces/Objektiv%20M1/objektiv_M1_bd3rqt.css');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 $font-serif: sans-serif;
 $font-monospace: "Space Mono", monospace;
-$font-default: "Poppins", Arial, sans-serif;
-$font-heading: "Poppins", Arial, sans-serif;
+$font-default: "Objektiv Mk1", Arial, sans-serif;
+$font-heading: "Objektiv Mk1", Arial, sans-serif;

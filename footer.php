@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 site-footer-copyright">
-                <a href="<?=home_url()?>">&copy;&nbsp;<?=date("Y") . ' ' . ( THEME_SETTINGS['copyright-name'] )?></a> |
+                &copy;&nbsp;<?=date("Y") . ' ' . ( THEME_SETTINGS['copyright-name'] )?> |
                 <a
                         href="<?=( THEME_SETTINGS['creator-url'] )?>"
                         target="_blank">
@@ -26,6 +26,9 @@
 
 <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
 <script defer src="<?=get_template_directory_uri() . '/assets/js/modules/cookieconsent-init.js'?>"></script>
+<script defer src="<?=get_template_directory_uri() . '/assets/js/wow.min.js'?>"></script>
+<script defer src="<?=get_template_directory_uri() . '/assets/js/wow-init.js'?>"></script>
 
+<?php wp_footer(); ?>
 </body>
 </html>

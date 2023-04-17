@@ -1,12 +1,12 @@
 // CSS Variables for responsive fonts
 :root {
   // Heading font sizes
-  --font-size-hero: 52px;
-  --font-size-h1: 40px;
-  --font-size-h2: 30px;
-  --font-size-h3: 24px;
-  --font-size-h4: 20px;
-  --font-size-h5: 16px;
+  --font-size-hero: 70px;
+  --font-size-h1: 55px;
+  --font-size-h2: 40px;
+  --font-size-h3: 30px;
+  --font-size-h4: 22px;
+  --font-size-h5: 18px;
   --font-size-h6: 14px;
 
   // Paragraph font sizes
@@ -35,6 +35,7 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-black: 900;
   --font-weight-paragraph: var(--font-weight-regular);
   --font-weight-headings: var(--font-weight-bold);
 

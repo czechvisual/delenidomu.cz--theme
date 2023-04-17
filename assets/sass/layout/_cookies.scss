@@ -1,7 +1,7 @@
 // Variables
-$cookie-background: $white;
-$cookie-text-color: $typography;
-$cookie-link-color: $primary;
+$cookie-background: var(--color-white);
+$cookie-text-color: var(--color-secondary);
+$cookie-link-color: var(--color-primary);
 
 // Typography
 // Default
@@ -10,8 +10,8 @@ $cookie-font-default-size: .9rem;
 $cookie-font-default-weight: 400;
 $cookie-section-border: #f1f3f5;
 $cookie-border-radius: .5rem;
-$toggle-bg-off: rgba($light, .5);
-$toggle-bg-disabled: rgba($light, .5);
+$toggle-bg-off: var(--color-gray-light);
+$toggle-bg-disabled: var(--color-gray-light);
 
 // Heading
 $cookie-font-heading: $font-heading;
@@ -19,12 +19,12 @@ $cookie-font-heading-size: var(--font-size-h4);
 $cookie-font-heading-weight: 700;
 
 // Buttons
-$cookie-button-background-primary: $primary;
-$cookie-button-background-primary-hover: darken($cookie-button-background-primary, 15%);
-$cookie-button-color-primary: $white;
-$cookie-button-background-secondary: rgba($light, .5);
-$cookie-button-background-secondary-hover: darken($cookie-button-background-secondary, 15%);
-$cookie-button-color-secondary: $primary;
+$cookie-button-background-primary: var(--color-primary);
+$cookie-button-background-primary-hover: var(--color-primary-darken);
+$cookie-button-color-primary: var(--color-white);
+$cookie-button-background-secondary: var(--color-gray-light);
+$cookie-button-background-secondary-hover: var(--color-gray);
+$cookie-button-color-secondary: var(--color-primary);
 $cookie-button-font-size: var(--font-size-13);
 $cookie-button-border-radius: 2rem;
 

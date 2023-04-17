@@ -1,0 +1,35 @@
+.features {
+  background-color: var(--color-primary);
+
+  .container {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  &-item {
+    @include flex ($direction: column, $justify: center, $align: center);
+
+    text-align: center;
+    color: var(--color-secondary);
+
+    span {
+      @include flex ($direction: column, $justify: center, $align: center);
+
+      padding: 1rem;
+      width: 3rem;
+      height: 3rem;
+      font-weight: var(--font-weight-bold);
+      color: var(--color-primary);
+      background-color: var(--color-secondary);
+      border-radius: 50%;
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+}

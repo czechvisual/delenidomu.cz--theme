@@ -1,9 +1,9 @@
 // Core variables
-$white: #ffffff !default;
-$text-color: #ffffff !default;
-$base-color: #362F73 !default;
+$white: hsl(0, 0%, 100%) !default;
+$text-color: hsl(0, 0%, 100%) !default;
+$base-color: hsl(222, 43%, 16%) !default;
 $icon-color: hsl( hue( $base-color ), 7%, 95% ) !default;
-$highlight-color: #DBFF00 !default;
+$highlight-color: hsl(74, 87%, 57%) !default;
 $notification-color: #EB1B56 !default;
 
 // Global

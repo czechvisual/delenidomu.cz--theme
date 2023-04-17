@@ -3,6 +3,10 @@ get_header();
 
 include 'components/hero.php'; ?>
 
+    <?php include 'components/features.php'; ?>
+
+    <?php include 'components/about.php'; ?>
+
     <div class="container blog">
         <div class="row gy-5 align-items-start">
             <?php

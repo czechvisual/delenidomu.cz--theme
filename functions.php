@@ -45,6 +45,8 @@ add_action( 'after_setup_theme', function() {
         // Post types
         'post_types' => [
             'carousel' => 'Carousel',
+            'features' => 'Features',
+            'team' => 'Team',
         ],
 
         // Add your own settings and use them wherever you need, for example THEME_SETTINGS['my_custom_setting']

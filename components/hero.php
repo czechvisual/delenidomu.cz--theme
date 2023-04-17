@@ -24,6 +24,7 @@
 
                     <img
                         src="<?php echo esc_url($url); ?>"
+                        class="animate__animated animate__pulse"
                         loading="lazy"
                         alt="<?php echo esc_attr($alt); ?>"
                     />
@@ -32,7 +33,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h1>
+                            <h1 class="wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
                                 <?=get_the_title()?>
                             </h1>
 
@@ -47,7 +48,8 @@
                                 $link_target = $link['target'] ? $link['target'] : '_self'; ?>
                                 <a
                                     href="<?=esc_url( $link_url )?>"
-                                    class="button button-medium button-secondary"
+                                    class="button button-medium button-primary wow fadeInUp"
+                                    data-wow-duration="1s"
                                     target="<?=esc_attr( $link_target )?>">
                                     <?=esc_html( $link_title )?>
                                 </a>
@@ -58,12 +60,13 @@
             </div>
         <?php endwhile; ?>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+
+    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Předchozí</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Následující</span>
-    </button>
+    </button>-->
 </div>

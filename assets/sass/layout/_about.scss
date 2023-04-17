@@ -1,0 +1,52 @@
+.about {
+  margin-top: -1rem;
+  padding-top: 0;
+  padding-bottom: 3rem;
+
+  &-content {
+    @include flex ($direction: column, $justify: center, $align: flex-start);
+
+    h1 {
+      margin-bottom: 0;
+      color: var(--color-secondary);
+    }
+
+    h5 {
+      line-height: 1.8;
+      color: var(--color-secondary);
+    }
+  }
+
+  &-item {
+    @include flex ($direction: column, $justify: flex-start, $align: flex-start);
+
+    padding: 2rem 2rem 0;
+    height: 100%;
+    color: var(--color-secondary);
+    background-color: var(--color-gray-light);
+    border-radius: 2rem;
+
+    &-header {
+      @include flex ($direction: row, $justify: flex-start, $align: center);
+
+      gap: 1rem;
+
+      img {
+        width: 5rem;
+      }
+
+      .title {
+        margin-bottom: 0;
+      }
+
+      .job {
+        margin-top: .5rem;
+        color: var(--color-primary);
+      }
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+}

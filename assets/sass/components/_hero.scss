@@ -1,18 +1,29 @@
 .hero {
   position: relative;
-  background-color: $primary;
+  background-color: var(--color-secondary);
+  z-index: 1;
 
   img {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: .15;
     z-index: 0;
   }
 
   h1 {
+    font-size: var(--font-size-hero);
+    font-weight: var(--font-weight-black);
     color: $white;
+    text-transform: uppercase;
+
+    @include media-queries-up(lg) {
+      max-width: 55%;
+    }
+
+    @include media-queries-up(xxl) {
+      max-width: 40%;
+    }
   }
 
   p {
@@ -21,8 +32,8 @@
     color: $white;
     opacity: .75;
 
-    @include media-queries-up(xxl) {
-      max-width: 70%;
+    @include media-queries-up(lg) {
+      max-width: 50%;
     }
   }
 
@@ -30,20 +41,18 @@
     @include flex ($direction: column, $justify: center, $align: center);
 
     position: relative;
-    padding: 3rem;
+    width: 100%;
     height: 95vh;
     text-align: center;
     z-index: 1;
 
     @include media-queries-up(md) {
-      height: 30rem;
-      max-width: 80%;
+      height: 45rem;
     }
 
-    @include media-queries-up(xxl) {
+    @include media-queries-up(lg) {
       @include flex ($direction: column, $justify: center, $align: flex-start);
 
-      padding: 3rem 0;
       text-align: left;
     }
   }

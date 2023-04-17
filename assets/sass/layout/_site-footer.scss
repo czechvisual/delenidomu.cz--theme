@@ -1,7 +1,7 @@
 .site {
   &-footer {
     padding: 1.5rem 1rem;
-    background-color: $secondary;
+    background-color: var(--color-gray-light);
     z-index: 10;
     transition: all .3s ease-in-out;
 
@@ -12,7 +12,8 @@
 
     &-copyright {
       text-align: center;
-      color: $primary;
+      color: var(--color-secondary-light);
+      font-weight: bold;
 
       @include media-queries-up(md) {
         text-align: left;
@@ -20,23 +21,29 @@
 
       a {
         text-align: center;
-        color: $primary;
+        color: var(--color-secondary-light);
         font-weight: bold;
         text-decoration: none;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          color: var(--color-primary);
+        }
       }
 
       img {
+        margin: -.5rem 0 0 .25rem;
         display: inline;
         width: auto;
-        height: 1.5rem;
-        // opacity: .5;
+        height: 1rem;
+        transition: all .3s ease-in-out;
       }
     }
 
     &-menu {
       margin-top: 1rem;
       text-align: center;
-      color: $primary;
+      color: var(--color-secondary);
 
       @include media-queries-up(md) {
         margin-top: inherit;
@@ -44,9 +51,14 @@
       }
 
       a {
-        color: $primary;
+        color: var(--color-secondary);
         font-weight: bold;
         text-decoration: none;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          color: var(--color-primary);
+        }
       }
     }
   }

@@ -6,17 +6,17 @@
   padding: 1rem;
   height: 3rem;
   width: 3rem;
-  background-color: $primary;
+  background-color: var(--color-primary-light);
   border-radius: 50%;
   cursor: pointer;
   opacity: 0;
-  transition: 500ms opacity;
+  transition: all .3s ease-in-out;
   visibility: hidden;
   z-index: 1;
 
   &:hover,
   &:focus {
-    background-color: darken($primary, 15%);
+    background-color: var(--color-primary);
   }
 
   &.is-visible {

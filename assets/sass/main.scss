@@ -40,6 +40,8 @@
 @import 'layout/wordpress';
 @import 'layout/error';
 @import 'layout/cookies';
+@import 'layout/features';
+@import 'layout/about';
 
 // Global features
 @import 'features/go-top';
@@ -47,6 +49,7 @@
 @import 'features/pagination';
 @import 'features/gravity-forms';
 @import 'features/breadcrumbs';
+@import 'features/owl.theme.default';
 
 // Views
 @import 'views/front-page';
