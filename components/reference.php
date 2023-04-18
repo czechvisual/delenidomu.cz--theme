@@ -4,7 +4,7 @@
         <?php while ( have_posts() ) : the_post(); ?>
 
             <div class="col text-center">
-                <h1>
+                <h1 class="wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
                     Reference
                 </h1>
             </div>

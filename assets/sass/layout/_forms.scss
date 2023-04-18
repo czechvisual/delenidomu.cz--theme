@@ -58,7 +58,6 @@ input[type="search"] {
   font-size: var(--font-size-input-fields);
   line-height: var(--form-line-height);
   margin-bottom: 0;
-  max-width: 80vw;
   padding-bottom: var(--form-padding-vertical);
   padding-left: var(--form-padding-horizontal);
   padding-right: var(--form-padding-horizontal);
@@ -66,6 +65,10 @@ input[type="search"] {
   position: relative;
   text-decoration: none;
   transition: background .55s;
+
+  @include media-queries-down(sm) {
+    max-width: 80vw;
+  }
 
   &::placeholder {
     color: var(--color-placeholder);

@@ -8,7 +8,7 @@
                     <?php
                     $price = get_field('price'); ?>
 
-                    <h1>
+                    <h1 class="wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
                         <?=$price['title']?>
                     </h1>
 

@@ -10,7 +10,7 @@ $cookie-font-default-size: .9rem;
 $cookie-font-default-weight: 400;
 $cookie-section-border: #f1f3f5;
 $cookie-border-radius: .5rem;
-$toggle-bg-off: var(--color-gray-light);
+$toggle-bg-off: var(--color-gray);
 $toggle-bg-disabled: var(--color-gray-light);
 
 // Heading
@@ -90,6 +90,7 @@ $cookie-category-block-background-hover: darken($cookie-category-block-backgroun
     display: flex;
     justify-content: space-between;
     margin-top: 1.4rem;
+    width: auto !important;
   }
 
   .c-bn {
@@ -105,6 +106,11 @@ $cookie-category-block-background-hover: darken($cookie-category-block-backgroun
     text-align: center;
     cursor: pointer;
   }
+}
+
+.c-bn.c_link {
+  min-width: 8rem;
+  width: auto !important;
 }
 
 #c-bns button + button,
@@ -294,6 +300,7 @@ $cookie-category-block-background-hover: darken($cookie-category-block-backgroun
   bottom: 0;
   height: 4.5rem;
   left: 0;
+  margin-bottom: .5rem;
   padding: 1rem 1.5rem;
   position: absolute;
   right: 0;

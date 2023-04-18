@@ -24,7 +24,9 @@
 
                     <img
                         src="<?=esc_url($url)?>"
-                        class="animate__animated animate__pulse hide-on-mobile"
+                        class="wow pulse hide-on-mobile"
+                        data-wow-duration="1s"
+                        data-wow-offset="10"
                         loading="lazy"
                         alt="<?=esc_attr($alt)?>"
                     />

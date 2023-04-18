@@ -1,6 +1,4 @@
 .contact {
-  margin-top: 3rem;
-  padding-top: 0;
   padding-bottom: 3rem;
 
   @include media-queries-down(sm) {
@@ -81,6 +79,10 @@
         text-indent: -1.5rem;
       }
     }
+  }
+
+  .form-container {
+    @include flex ($direction: column, $justify: flex-start, $align: center);
   }
 
   .email, .phone, .address, .website  {

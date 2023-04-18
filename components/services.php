@@ -7,7 +7,7 @@
                 <?php
                 $services = get_field('services'); ?>
 
-                <h1>
+                <h1 class="wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
                     <?=$services['title']?>
                 </h1>
 

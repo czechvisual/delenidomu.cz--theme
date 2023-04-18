@@ -1,11 +1,34 @@
 .about {
-  margin-top: -4rem;
   padding-top: 0;
   padding-bottom: 3rem;
 
-  @include media-queries-down(sm) {
-    margin-top: -4rem;
+  .video-container {
+    @include flex ($direction: column, $justify: center, $align: flex-start);
+
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+
+    @include media-queries-up(md) {
+      height: 500px;
+    }
+
+    @include media-queries-up(lg) {
+      height: 600px;
+    }
+
+    @include media-queries-up(xxl) {
+      height: 600px;
+    }
+
+    canvas {
+      position: absolute;
+      width: 100%;
+      object-fit: contain;
+    }
   }
+
 
   img {
     @include media-queries-down(lg) {

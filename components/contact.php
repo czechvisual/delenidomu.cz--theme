@@ -7,7 +7,7 @@
                 <?php
                 $about = get_field('contact'); ?>
 
-                <h1>
+                <h1 class="wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
                     <?=$about['title']?>
                 </h1>
 
@@ -24,7 +24,7 @@
                 </h5>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 d form-container wow slideInRight" data-wow-duration="1s" data-wow-offset="10">
                 <?=do_shortcode('[contact-form-7 id="111" title="Poptávkový formulář"]')?>
             </div>
 
