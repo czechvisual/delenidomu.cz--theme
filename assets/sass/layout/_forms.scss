@@ -29,7 +29,15 @@ input + label {
   font-weight: unset;
 }
 
+form p {
+  margin: 1rem 0;
+}
+
 // Form input elements and textareas
+textarea {
+  max-height: 10rem;
+}
+
 textarea,
 input[type="text"],
 input[type="tel"],
@@ -50,6 +58,7 @@ input[type="search"] {
   font-size: var(--font-size-input-fields);
   line-height: var(--form-line-height);
   margin-bottom: 0;
+  max-width: 80vw;
   padding-bottom: var(--form-padding-vertical);
   padding-left: var(--form-padding-horizontal);
   padding-right: var(--form-padding-horizontal);

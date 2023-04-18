@@ -43,13 +43,6 @@ function disable_comments_hide_existing_comments($comments)
 }
 add_filter('comments_array', __NAMESPACE__ . '\disable_comments_hide_existing_comments', 10, 2);
 
-// Remove comments page in menu
-function disable_comments_admin_menu()
-{
-    remove_menu_page('edit-comments.php');
-}
-add_action('admin_menu', __NAMESPACE__ . '\disable_comments_admin_menu');
-
 // Redirect any user trying to access comments page
 function disable_comments_admin_menu_redirect()
 {

@@ -2,11 +2,11 @@
 :root {
   // Form element colors
   --color-background-input-field: var(--color-white);
-  --color-form-text: var(--color-paragraph);
+  --color-form-text: var(--color-secondary-light);
   --color-form-label-text: var(--color-form-text);
   --color-required-label-text: var(--color-form-text);
-  --color-border-forms: var(--color-paragraph);
-  --color-border-forms-focus: var(--color-paragraph);
+  --color-border-forms: var(--color-gray);
+  --color-border-forms-focus: var(--color-secondary);
   --color-button: var(--color-white);
   --color-button-hover: var(--color-white);
   --color-button-background: var(--color-east-bay);
@@ -14,8 +14,8 @@
   --color-checkbox: var(--color-east-bay);
   --color-checkbox-outline: 0 0 0 3px rgb(84 87 115 / .2);
   --color-checkbox-checked: var(--color-form-label-text);
-  --color-placeholder: var(--color-paragraph);
-  --color-placeholder-focus: var(--color-black);
+  --color-placeholder: var(--color-gray);
+  --color-placeholder-focus: var(--color-secondary);
   --opacity-placeholder: .4;
   --opacity-placeholder-focus: .8;
 
@@ -29,11 +29,11 @@
   --font-size-input-labels: var(--font-size-input-fields);
   --font-size-required-text-label: var(--font-size-input-fields);
   --font-size-required-asterisk-label: 22px;
-  --form-column-gap: 2rem;
-  --form-row-gap: 2rem;
+  --form-column-gap: 1rem;
+  --form-row-gap: 1rem;
   --form-required-gap: .5rem;
   --form-line-height: 24px;
-  --form-padding-vertical: 1rem;
+  --form-padding-vertical: .5rem;
   --form-padding-horizontal: 1.5rem;
   --gap-checkbox: 10px;
   --gap-select-icon: 1.5rem;

@@ -1,0 +1,19 @@
+.price {
+  background-color: var(--color-gray-light);
+
+  &-content {
+    @include flex ($direction: column, $justify: center, $align: center);
+
+    text-align: center;
+
+    h1 {
+      margin-bottom: 0;
+      color: var(--color-secondary);
+    }
+
+    h5 {
+      line-height: 1.8;
+      color: var(--color-secondary);
+    }
+  }
+}

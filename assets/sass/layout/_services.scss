@@ -1,0 +1,58 @@
+.services {
+  h1 {
+    color: var(--color-secondary);
+  }
+
+  &-item {
+    @include flex ($direction: column, $justify: flex-start, $align: center);
+
+    padding: 2rem;
+    height: 100%;
+    color: var(--color-secondary);
+    background-color: var(--color-gray-light);
+    border-radius: 2rem;
+    gap: 2rem;
+    transition: all .3s ease-in-out;
+
+    @include media-queries-down(sm) {
+      @include flex ($direction: row, $justify: center, $align: center);
+
+      padding: 2rem;
+    }
+
+    &:hover {
+      background-color: var(--color-primary-lightest);
+
+      img {
+        transform: scale(1.1);
+      }
+
+      .services-item-content {
+        .title {
+          color: var(--color-primary);
+          border-bottom: 3px solid var(--color-primary-light);
+        }
+      }
+    }
+
+    img {
+      width: 5rem;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+    }
+
+    &-content {
+      @include flex ($direction: column, $justify: flex-start, $align: flex-start);
+
+      .title {
+        margin-bottom: 0;
+        border-bottom: 3px solid transparent;
+        transition: all .3s ease-in-out;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -47,6 +47,8 @@ add_action( 'after_setup_theme', function() {
             'carousel' => 'Carousel',
             'features' => 'Features',
             'team' => 'Team',
+            'services' => 'Services',
+            'reference' => 'Reference',
         ],
 
         // Add your own settings and use them wherever you need, for example THEME_SETTINGS['my_custom_setting']
@@ -67,3 +69,19 @@ require get_theme_file_path( '/inc/includes.php' );
 add_action( 'init', __NAMESPACE__ . '\theme_setup' );
 add_action( 'after_setup_theme', __NAMESPACE__ . '\build_theme_support' );
 
+// Remove items from menu
+function disable_items_admin_menu()
+{
+    // For everybody
+    remove_menu_page('edit-comments.php');
+    remove_menu_page('edit.php');
+
+    // Only for roles
+    $user = wp_get_current_user();
+    if ( in_array( 'editor', (array) $user->roles ) ) {
+        remove_menu_page('users.php');
+        remove_menu_page('profile.php');
+        remove_menu_page('tools.php');
+    }
+}
+add_action('admin_menu', __NAMESPACE__ . '\disable_items_admin_menu');

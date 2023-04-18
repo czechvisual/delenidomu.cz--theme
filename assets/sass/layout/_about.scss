@@ -1,10 +1,29 @@
 .about {
-  margin-top: -1rem;
+  margin-top: -4rem;
   padding-top: 0;
   padding-bottom: 3rem;
 
+  @include media-queries-down(sm) {
+    margin-top: -4rem;
+  }
+
+  img {
+    @include media-queries-down(lg) {
+      max-width: 100%;
+    }
+  }
+
   &-content {
     @include flex ($direction: column, $justify: center, $align: flex-start);
+
+    margin-top: 8rem;
+
+    @include media-queries-down(sm) {
+      @include flex ($direction: column, $justify: center, $align: center);
+
+      margin-top: 5rem;
+      text-align: center;
+    }
 
     h1 {
       margin-bottom: 0;
@@ -14,6 +33,10 @@
     h5 {
       line-height: 1.8;
       color: var(--color-secondary);
+
+      @include media-queries-down(sm) {
+        margin-top: 0;
+      }
     }
   }
 

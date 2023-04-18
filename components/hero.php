@@ -17,18 +17,24 @@
             <div class="hero carousel-item <?php echo $class; ?>">
                 <?php
                 $image = get_field('background_image');
-
-                if( $image ):
-                    $url = $image['url'];
-                    $alt = $image['alt']; ?>
+                $image_mobile = get_field('background_image_mobile');
+                $url = $image['url'];
+                $url_mobile = $image_mobile['url'];
+                $alt = $image['alt']; ?>
 
                     <img
-                        src="<?php echo esc_url($url); ?>"
-                        class="animate__animated animate__pulse"
+                        src="<?=esc_url($url)?>"
+                        class="animate__animated animate__pulse hide-on-mobile"
                         loading="lazy"
-                        alt="<?php echo esc_attr($alt); ?>"
+                        alt="<?=esc_attr($alt)?>"
                     />
-                <?php endif; ?>
+
+                    <img
+                        src="<?=esc_url($url_mobile)?>"
+                        class="animate__animated animate__pulse hide-on-desktop"
+                        loading="lazy"
+                        alt="<?=esc_attr($alt)?>"
+                    />
 
                 <div class="container">
                     <div class="row">

@@ -1,5 +1,5 @@
 <div id="about" class="about container">
-    <div class="row">
+    <div class="row gy-5">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -23,7 +23,7 @@
         <?php endwhile; ?>
     </div>
 
-    <div class="row mt-5">
+    <div class="row gy-4 mt-5">
 
         <?php
         $args = array(
@@ -35,18 +35,12 @@
 
         $query = new WP_Query($args);
         if ($query->have_posts()) :
-            $counter = 1;
             while ($query->have_posts()) : $query->the_post(); ?>
 
                 <div class="col">
                     <div class="about-item">
-                        <?php
-                        $image = get_field('photo');
-                        $url = $image['url'];
-                        $alt = $image['alt']; ?>
-
                         <div class="about-item-header">
-                            <img src="<?php echo esc_url($url); ?>" loading="lazy" alt="<?php echo esc_attr($alt); ?>"/>
+                            <img src="<?=get_the_post_thumbnail_url()?>" loading="lazy" alt="<?=get_the_title()?>"/>
 
                             <div>
                                 <h4 class="title">

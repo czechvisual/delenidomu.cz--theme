@@ -25,7 +25,32 @@
             "aria-label": "",
             "type": "image",
             "instructions": "Maximální velikost souboru je 1 MB. Povolené formáty obrázků jsou .jpg a .webp.",
-            "required": 0,
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": 1,
+            "mime_types": ".jpg, .webp",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_643e4e8c3da6d",
+            "label": "Obrázek v pozadí - mobilní",
+            "name": "background_image_mobile",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Maximální velikost souboru je 1 MB. Povolené formáty obrázků jsou .jpg a .webp.",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -62,5 +87,5 @@
     "active": true,
     "description": "Položky carouselu v úvodním hero slideru.",
     "show_in_rest": 0,
-    "modified": 1666525121
+    "modified": 1681804976
 }

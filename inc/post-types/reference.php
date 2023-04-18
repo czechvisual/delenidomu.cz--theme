@@ -7,35 +7,34 @@
 namespace acdfevelop;
 
 // Registers the post types
-class Team extends Post_Type {
+class Reference extends Post_Type {
 
     public function register() {
         $generated_labels = [
-            'menu_name'             => __( 'Náš tým', __NAMESPACE__ ),
-            'name'                  => _x( 'Náš tým', 'post type general name', __NAMESPACE__ ),
-            'singular_name'         => _x( 'Náš tým', 'post type singular name', __NAMESPACE__ ),
-            'name_admin_bar'        => _x( 'Náš tým', 'add new on admin bar', __NAMESPACE__ ),
-            'add_new'               => _x( 'Přidat čelna', 'thing', __NAMESPACE__ ),
-            'add_new_item'          => __( 'Přidat nového člena', __NAMESPACE__ ),
-            'new_item'              => __( 'Přidat', __NAMESPACE__ ),
+            'menu_name'             => __( 'Reference', __NAMESPACE__ ),
+            'name'                  => _x( 'Reference', 'post type general name', __NAMESPACE__ ),
+            'singular_name'         => _x( 'Reference', 'post type singular name', __NAMESPACE__ ),
+            'name_admin_bar'        => _x( 'Reference', 'add new on admin bar', __NAMESPACE__ ),
+            'add_new'               => _x( 'Vytvořit referenci', 'thing', __NAMESPACE__ ),
+            'add_new_item'          => __( 'Vytvořit novou referenci', __NAMESPACE__ ),
+            'new_item'              => __( 'Nová', __NAMESPACE__ ),
             'edit_item'             => __( 'Upravit', __NAMESPACE__ ),
             'view_item'             => __( 'Zobrazit', __NAMESPACE__ ),
-            'all_items'             => __( 'Všichni', __NAMESPACE__ ),
+            'all_items'             => __( 'Všechny', __NAMESPACE__ ),
             'search_items'          => __( 'Vyhledat', __NAMESPACE__ ),
-            'parent_item_colon'     => __( 'Nadřazený:', __NAMESPACE__ ),
-            'not_found'             => __( 'Žádný člen nenalezen.', __NAMESPACE__ ),
-            'not_found_in_trash'    => __( 'Žádná člen nebyl v koši nalezen.', __NAMESPACE__ ),
-            'featured_image'        => __( 'Profilová fotografie', __NAMESPACE__ ),
+            'parent_item_colon'     => __( 'Nadřazená:', __NAMESPACE__ ),
+            'not_found'             => __( 'Žádná reference nenalezena.', __NAMESPACE__ ),
+            'not_found_in_trash'    => __( 'Žádá reference nebyla v koši nalezena.', __NAMESPACE__ ),
+            'featured_image'        => __( 'Fotografie reference', __NAMESPACE__ ),
             'set_featured_image'    => __( 'Použít jako fotografii', __NAMESPACE__ ),
             'remove_featured_image' => __( 'Odebrat fotografii', __NAMESPACE__ ),
             'use_featured_image'    => __( 'Použít jako fotografii', __NAMESPACE__ )
-
         ];
 
         $args = [
             'labels'              => $generated_labels,
             'description'         => '',
-            'menu_icon'           => 'dashicons-groups',
+            'menu_icon'           => 'dashicons-visibility',
             'public'              => false,
             'has_archive'         => false,
             'exclude_from_search' => false,
@@ -44,7 +43,7 @@ class Team extends Post_Type {
             'show_in_rest'        => false,
             'rewrite'             => [
                 'with_front'  => false,
-                'slug'        => 'team',
+                'slug'        => 'reference',
             ],
             'supports'            => [ 'title', 'editor', 'thumbnail' ],
             'taxonomies'          => [],
