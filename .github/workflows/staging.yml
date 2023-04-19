@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - master
+
+name: 🚀 Staging deploy on merge
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      with:
+        server: cluster.hostliner.cz
+        username: ${{ secrets.FTP_USERNAME_CLUSTER }}
+        password: ${{ secrets.FTP_PASSWORD_CLUSTER }}
+        protocol: ftps
+        port: 21
+        local-dir: ./
+        server-dir: delenidomu.czechvisual.space/wp-content/themes/delenidomu.cz--theme/
+        state-name: .staging.json
+        exclude: |
+          **/.git*/**
+          **/node_modules/**
+          **/.git*
+          **/.eslintrc.js
+          **/.stylelint*
+          **/.stylelint*
+          **/package*
+          **/README.md
