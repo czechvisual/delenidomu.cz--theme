@@ -16,7 +16,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: cluster.hostliner.cz
-        username: oveqspzo@patrikvadura.cz
+        username: ${{ secrets.FTP_USERNAME_CLUSTER }}
         password: ${{ secrets.FTP_PASSWORD_CLUSTER }}
         protocol: ftps
         port: 21
