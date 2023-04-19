@@ -24,7 +24,7 @@ add_action( 'after_setup_theme', function() {
         // Logo and featured image
         'default_featured_image'  => null,
         'logo'                    => '/assets/img/logo.svg',
-        'copyright-name'          => 'Název firmy, s.r.o.',
+        'copyright-name'          => 'delenidomu.cz',
         'creator'                 => 'czechvisual',
         'creator-url'             => 'https://czechvisual.cz/',
         'logo-creator'            => '/assets/img/logo-creator.svg',
