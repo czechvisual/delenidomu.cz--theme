@@ -1,0 +1,34 @@
+on:
+  release:
+    types:
+      - created
+
+name: 🚀 Production deploy on merge
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: cluster.hostliner.cz
+        username: ${{ secrets.FTP_USERNAME_CLUSTER }}
+        password: ${{ secrets.FTP_PASSWORD_CLUSTER }}
+        protocol: ftps
+        port: 21
+        local-dir: ./
+        server-dir: delenidomu.cz/wp-content/themes/delenidomu.cz--theme/
+        state-name: .production.json
+        exclude: |
+          **/.git*/**
+          **/node_modules/**
+          **/.git*
+          **/.eslintrc.js
+          **/.stylelint*
+          **/.stylelint*
+          **/package*
+          **/README.md

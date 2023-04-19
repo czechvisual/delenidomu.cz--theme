@@ -1,4 +1,22 @@
-# Komplexní, individuální ACF šablona na míru pro váš web.
+<div align="center">
+  <p>
+    <img src="https://czechvisual.space/_cdn/czechvisual/developtheme/assets/logo_default.svg" width="300" height="150" style="max-width: 100%;" alt="developtheme">
+  </p>
+
+  <p>
+    <a href="https://delenidomu.cz/" target="_blank">
+      <img src="https://czechvisual.space/_cdn/czechvisual/github/github_badge_production.svg" height="20" style="max-width: 100%;" alt="">
+    </a>
+    <a href="https://delenidomu.czechvisual.space/" target="_blank">
+      <img src="https://czechvisual.space/_cdn/czechvisual/github/github_badge_staging.svg" height="20" style="max-width: 100%;" alt="">
+    </a>
+    <a href="https://opensource.org/licenses/MIT" target="_blank">
+      <img src="https://czechvisual.space/_cdn/czechvisual/github/github_badge_licence.svg" height="20" style="max-width: 100%;" alt="">
+    </a>
+  </p>
+</div>
+
+## Getting Started
 
 ```bash
 - Usage: Frontend theme - WordPress
@@ -17,14 +35,11 @@ $ npm install
 ---
 
 ### SASS
-WordPress je open source software, který můžete použít k vytváření krásných webových stránek, blogů nebo jiných aplikací.
+Sass je nejvyspělejší, nejstabilnější a nejvýkonnější profesionální jazyk rozšíření CSS na světě.
 
 [Documentation](https://sass-lang.com/documentation)
 
 ```bash
-# install dependencies (only if you dont have installed yet)
-$ npm install
-
 # watch sass - frontend
 $ npm run watch
 
@@ -40,7 +55,7 @@ WordPress je open source software, který můžete použít k vytváření krás
 [Documentation](https://developer.wordpress.org/)
 
 ```bash
-- recomanded version: v6.1
+- recomanded version: v8.0
 ```
 
 **Install theme**
@@ -108,11 +123,4 @@ Každý release je číslovaný vzestupně dle jednotlivých publikací.
 
 ```bash
 např.v1.0.0
-```
-
-### Názvy
-Skladba názvu je velmi jednoduchá. Obsahuje slovo "Release" + tag.
-
-```bash
-např. Release v1.0.0
 ```
