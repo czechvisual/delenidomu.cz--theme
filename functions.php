@@ -85,3 +85,6 @@ function disable_items_admin_menu()
     }
 }
 add_action('admin_menu', __NAMESPACE__ . '\disable_items_admin_menu');
+
+// Option page
+// require get_theme_file_path( '/inc/option-page.php' );

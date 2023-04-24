@@ -2,7 +2,7 @@
   &-feature {
     position: relative;
     color: $typography;
-    background-color: $primary;
+    background-color: $secondary;
 
     img {
       position: absolute;
@@ -24,18 +24,21 @@
 
       @include media-queries-up(md) {
         text-align: left;
-        max-width: 80%;
       }
 
       @include media-queries-up(xxl) {
         @include flex ($direction: column, $justify: center, $align: flex-start);
 
-        padding: 3rem 0;
+        padding: 3rem 2rem;
         height: 30rem;
       }
 
       h1 {
         color: $white;
+
+        span {
+          color: $primary;
+        }
       }
     }
   }

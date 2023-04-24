@@ -18,7 +18,7 @@
             </div>
 
             <div class="col-md-6 site-footer-menu">
-                <a href="/" target="_blank">Ochrana osobních údajů</a> | <a href="/" target="_blank">Cookies</a>
+                <a href="/privacy-policy" target="_blank">Ochrana osobních údajů</a> | <a href="/cookies" target="_blank">Cookies</a>
             </div>
         </div>
     </div>
