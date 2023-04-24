@@ -38,7 +38,7 @@
         center: false,
         items: 1,
         lazyLoad: true,
-        loop: true,
+        loop: false,
         margin: 20,
         autoplay: true,
         autoplayTimeout: 3000,
