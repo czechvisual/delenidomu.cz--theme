@@ -21,23 +21,6 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_643e6919ac63b",
-            "label": "Zdroj \/ odkaz",
-            "name": "link",
-            "aria-label": "",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "např. https:\/\/www.bydleni-kuty.cz"
         }
     ],
     "location": [
@@ -58,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1681811807
+    "modified": 1682930396
 }

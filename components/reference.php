@@ -55,10 +55,6 @@
                         <p>
                             <?=get_the_content()?>
                         </p>
-
-                        <a href="<?=the_field('link')?>">
-                            Zobrazit více
-                        </a>
                     </div>
                 </div>
 

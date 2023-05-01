@@ -48,7 +48,11 @@
                 <div class="col">
                     <div class="contact-item">
                         <div class="contact-item-header">
-                            <img src="<?=get_the_post_thumbnail_url()?>" loading="lazy" alt="<?=get_the_title()?>"/>
+                            <?php if ( has_post_thumbnail() ): ?>
+
+                                <img src="<?=get_the_post_thumbnail_url()?>" loading="lazy" alt="<?=get_the_title()?>"/>
+
+                            <?php endif; ?>
 
                             <div>
                                 <h4 class="title">
