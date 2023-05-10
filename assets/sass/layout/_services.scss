@@ -88,6 +88,10 @@
     &-item {
       @include flex ($direction: row, $justify: flex-start, $align: center);
 
+      @include media-queries-down(sm) {
+        @include flex ($direction: column, $justify: center, $align: center);
+      }
+
       img {
         margin-right: 2rem;
         width: 4rem;

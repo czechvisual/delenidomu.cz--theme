@@ -1,17 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>services_number_03</title>
-    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Landing-page---desktop" transform="translate(-474.000000, -4027.000000)">
-            <g id="for_who" transform="translate(463.000000, 3758.000000)">
-                <g id="services_number_03" transform="translate(11.000000, 269.000000)">
-                    <rect id="Rectangle-Copy-5" fill="#EE6C4D" x="25" y="0" width="38" height="38" rx="19"></rect>
-                    <rect id="Rectangle-Copy-5" fill="#293241" x="0" y="5" width="58" height="58" rx="29"></rect>
-                    <text id="3" font-family="ObjektivMk1-Bold, Objektiv Mk1" font-size="20" font-weight="bold" fill="#FFFFFF">
-                        <tspan x="22.8" y="41">3</tspan>
-                    </text>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="189" height="189" viewBox="0 0 189 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="services_number_03" clip-path="url(#clip0_0_334)">
+<path id="Rectangle Copy 5" d="M75 57C75 25.5198 100.52 0 132 0V0C163.48 0 189 25.5198 189 57V57C189 88.4802 163.48 114 132 114V114C100.52 114 75 88.4802 75 57V57Z" fill="#EE6C4D"/>
+<path id="Rectangle Copy 5_2" d="M0 102C0 53.9512 38.9512 15 87 15V15C135.049 15 174 53.9512 174 102V102C174 150.049 135.049 189 87 189V189C38.9512 189 0 150.049 0 102V102Z" fill="#293241"/>
+<path id="3" d="M89.8165 85.8004H72.6565V78.3604H100.196V84.9604L89.0365 96.5403C91.5565 96.6603 93.7565 97.2803 95.6365 98.4003C97.5165 99.4804 98.9765 100.96 100.016 102.84C101.056 104.72 101.576 106.88 101.576 109.32C101.576 112.32 100.876 114.92 99.4765 117.12C98.1165 119.28 96.1365 120.96 93.5365 122.16C90.9765 123.36 87.9165 123.96 84.3565 123.96C81.9165 123.96 79.5965 123.7 77.3965 123.18C75.1965 122.66 73.3365 121.94 71.8165 121.02L72.5965 113.58C74.3565 114.58 76.1765 115.32 78.0565 115.8C79.9765 116.28 81.9165 116.52 83.8765 116.52C86.5565 116.52 88.6565 115.9 90.1765 114.66C91.6965 113.42 92.4565 111.7 92.4565 109.5C92.4565 107.38 91.7165 105.72 90.2365 104.52C88.7965 103.32 86.7765 102.72 84.1765 102.72C83.4565 102.72 82.7565 102.76 82.0765 102.84C81.4365 102.88 80.8165 103 80.2165 103.2L77.9965 98.2204L89.8165 85.8004Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_334">
+<rect width="63" height="63" fill="white" transform="scale(3)"/>
+</clipPath>
+</defs>
 </svg>

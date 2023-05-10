@@ -23,7 +23,6 @@ jobs:
         local-dir: ./
         server-dir: delenidomu.czechvisual.space/wp-content/themes/delenidomu.cz--theme/
         state-name: .staging.json
-        dangerous-clean-slate: true
         exclude: |
           **/.git*/**
           **/node_modules/**
