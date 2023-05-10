@@ -53,3 +53,28 @@
 
     </div>
 </div>
+
+<div id="services" class="services-banner container-fluid">
+    <div class="row">
+        <div class="container text-center">
+
+            <h3 class="wow slideInLeft" data-wow-duration="1s" data-wow-offset="10">
+                Snažíme se vždy o nalezení řešení na míru zohledňující individuální potřeby klienta.
+            </h3>
+
+            <p>
+
+                <?php
+                $sub_services = array('Prohlášení vlastníka', 'změna prohlášení vlastníka', 'dohoda o změně práv a povinností', 'odstranění vad prohlášení vlastníka', 'prohlášení vlastníka dotčených jednotek', 'smlouva o výstavbě', 'střešní nástavba', 'půdní vestavba', 'stavební úpravy domů', 'dělení jednotek', 'slučování jednotek', 'rozšiřování jednotek', 'změny jednotek', 'stavební úpravy jednotek', 'likvidace', 'bytové spoluvlastnictví', 'práva a povinnosti vlastníků jednotek');
+
+                foreach($sub_services as $value): ?>
+
+
+                    <?=$value?> <span>.</span>
+
+                <?php endforeach; ?>
+
+            </p>
+        </div>
+    </div>
+</div>

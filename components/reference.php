@@ -73,7 +73,7 @@
         lazyLoad: true,
         loop: false,
         margin: 20,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         smartSpeed: 450,

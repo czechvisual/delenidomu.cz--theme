@@ -55,4 +55,43 @@
       }
     }
   }
+
+  &-banner {
+    background: var(--color-primary);
+
+    h3 {
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      max-width: 80%;
+      color: var(--color-secondary);
+    }
+
+    p {
+      display: inline;
+      vertical-align: middle;
+      color: var(--color-secondary);
+
+      span {
+        font-size: 2rem;
+        line-height: 1rem;
+        padding: 0 .25rem;
+        font-weight: var(--font-weight-bold);
+      }
+    }
+  }
+
+  &-for {
+    h1 {
+      color: var(--color-secondary);
+    }
+
+    &-item {
+      @include flex ($direction: row, $justify: flex-start, $align: center);
+
+      img {
+        margin-right: 2rem;
+        width: 4rem;
+      }
+    }
+  }
 }

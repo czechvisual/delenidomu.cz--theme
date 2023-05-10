@@ -5,6 +5,7 @@ get_header();
     include 'components/features.php';
     include 'components/about.php';
     include 'components/services.php';
+    include 'components/services-for.php';
     include 'components/price.php';
     include 'components/reference.php';
     include 'components/contact.php';
