@@ -78,28 +78,10 @@ cookieconsent.run({
           },
           cookie_table: [{
             col1: 'cc_cookies',
-            col2: '.uhcar.cz',
+            col2: '.delenidomu.cz',
             col3: '1 rok',
             col4: 'Ukládá souhlas uživatele s používáním cookies.',
             is_regex: true
-          },
-          {
-            col1: 'CONSENT',
-            col2: '.google.com',
-            col3: '7 dní',
-            col4: 'Nezbytné pro fungování webu.'
-          },
-          {
-            col1: 'ssupp.vid',
-            col2: '.uhcar.cz',
-            col3: '6 měsíců',
-            col4: 'Soubor cookie nastavený společností Smartsupp k zaznamenání ID návštěvníka.',
-          },
-          {
-            col1: 'ssupp.visits',
-            col2: '.uhcar.cz',
-            col3: '6 měsíců',
-            col4: 'Soubor cookie nastavený společností Smartsupp k zaznamenávání počtu předchozích návštěv, nezbytných pro sledování automatických zpráv.'
           },
           {
             col1: '_GRECAPTCHA',
@@ -116,73 +98,25 @@ cookieconsent.run({
             enabled: false,
             readonly: false
           },
-          cookie_table: [{
-            col1: '_gcl_au',
-            col2: '.uhcar.cz',
-            col3: '3 měsíce',
-            col4: 'Poskytuje Google Tag Manager k experimentování s účinností inzerce webových stránek využívajících jejich služby.',
-            is_regex: true
-          },
-          {
-            col1: '_ga',
-            col2: '.uhcar.cz',
-            col3: '2 roky',
-            col4: 'Soubor cookie _ga, nainstalovaný službou Google Analytics, vypočítává údaje o návštěvnících, relacích a kampaních a také sleduje využití webu pro analytický přehled webu. Soubor cookie ukládá informace anonymně a přiřazuje náhodně vygenerované číslo k rozpoznání unikátních návštěvníků.'
-          },
-          {
-            col1: '_gid',
-            col2: '.uhcar.cz',
-            col3: '1 den',
-            col4: 'Soubor cookie _gid nainstalovaný službou Google Analytics ukládá informace o tom, jak návštěvníci používají webovou stránku, a zároveň vytváří analytickou zprávu o výkonu webu. Některá data, která jsou shromažďována, zahrnují počet návštěvníků, jejich zdroj a stránky, které anonymně navštěvují.'
-          },
-          {
-            col1: '_gat_UA-54287801-1',
-            col2: '.uhcar.cz',
-            col3: '1 minuta',
-            col4: 'Varianta souboru cookie _gat nastaveného službami Google Analytics a Správcem značek Google, který umožňuje vlastníkům webových stránek sledovat chování návštěvníků a měřit výkon webu. Prvek vzoru v názvu obsahuje jedinečné identifikační číslo účtu nebo webu, ke kterému se vztahuje.'
-          },
-          {
-            col1: '_ga_J5R49N47GK',
-            col2: '.uhcar.cz',
-            col3: '2 roky',
-            col4: 'Tento soubor cookie je nainstalován službou Google Analytics.'
-          },
-          {
-            col1: 'sid',
-            col2: '.seznam.cz',
-            col3: '1 měsíc',
-            col4: 'Sid cookie obsahuje digitálně podepsané a šifrované záznamy ID účtu Google uživatele a posledního času přihlášení.'
-          },
-          {
-            col1: 'leady_session_id',
-            col2: '.uhcar.cz',
-            col3: 'relace',
-            col4: 'Sleduje session ID pro Leady'
-          },
-          {
-            col1: 'FPLC',
-            col2: '.uhcar.cz',
-            col3: '20 hodin',
-            col4: 'Používají se pro serverové trackovací účely Google Analytics.'
-          },
-          {
-            col1: 'FPID',
-            col2: '.uhcar.cz',
-            col3: '2 roky',
-            col4: 'Používají se pro serverové trackovací účely Google Analytics.'
-          },
-          {
-            col1: 'FPAU',
-            col2: '.uhcar.cz',
-            col3: '3 měsíce',
-            col4: 'Používají se pro serverové trackovací účely Google Analytics.'
-          },
-          {
-            col1: '1P_JAR',
-            col2: '.google.com',
-            col3: '30 dní',
-            col4: 'Vytváří statistiku z webu.'
-          }
+          cookie_table: [
+            {
+              col1: '_ga',
+              col2: '.delenidomu.cz',
+              col3: '2 roky',
+              col4: 'Soubor cookie _ga, nainstalovaný službou Google Analytics, vypočítává údaje o návštěvnících, relacích a kampaních a také sleduje využití webu pro analytický přehled webu. Soubor cookie ukládá informace anonymně a přiřazuje náhodně vygenerované číslo k rozpoznání unikátních návštěvníků.'
+            },
+            {
+              col1: '_gid',
+              col2: '.delenidomu.cz',
+              col3: '1 den',
+              col4: 'Soubor cookie _gid nainstalovaný službou Google Analytics ukládá informace o tom, jak návštěvníci používají webovou stránku, a zároveň vytváří analytickou zprávu o výkonu webu. Některá data, která jsou shromažďována, zahrnují počet návštěvníků, jejich zdroj a stránky, které anonymně navštěvují.'
+            },
+            {
+              col1: '1P_JAR',
+              col2: '.google.com',
+              col3: '30 dní',
+              col4: 'Vytváří statistiku z webu.'
+            }
           ]
         }, {
           title: 'Marketingové cookies',
@@ -192,54 +126,13 @@ cookieconsent.run({
             enabled: false,
             readonly: false
           },
-          cookie_table: [{
-            col1: 'c',
-            col2: 't.leady.com',
-            col3: '15 let 2 měsíce 13 dní 14 hodin',
-            col4: 'Tento soubor cookie je nastaven společností Rubicon Project za účelem řízení synchronizace identifikace uživatele a výměny uživatelských dat mezi různými reklamními službami.'
-          },
-          {
-            col1: 'test_cookie',
-            col2: '.doubleclick.net',
-            col3: '15 minut',
-            col4: 'Test_cookie nastavuje doubleclick.net a používá se k určení, zda prohlížeč uživatele podporuje soubory cookie.'
-          },
-          {
-            col1: '_fbp',
-            col2: '.uhcar.cz',
-            col3: '3 měsíce',
-            col4: 'Tento soubor cookie je nastaven společností Facebook, aby po návštěvě webové stránky zobrazoval reklamy na Facebooku nebo na digitální platformě poháněné reklamou na Facebooku.'
-          },
-          {
-            col1: '_gfp_64b',
-            col2: '.seznam.cz',
-            col3: '13 měsíců',
-            col4: 'Soubory cookie k marketingovým účelům Seznam.'
-          },
-          {
-            col1: 'DV',
-            col2: '.google.com',
-            col3: '7 minut',
-            col4: 'Ukládá informace o chování na stránce a sleduje reklamy před navštívením stránky k účelům následného využítí pro reklamu.'
-          },
-          {
-            col1: 'NID',
-            col2: '.google.com',
-            col3: '6 měsíců',
-            col4: 'Ukládá preference a preferovaná nastavení uživatele, lze využít k zobrazování reklam.'
-          },
-          {
-            col1: 'WeatherLocality',
-            col2: '.seznam.cz',
-            col3: '30 dní',
-            col4: 'Ukládá polohu pro Seznam.'
-          },
-          {
-            col1: 'OTZ',
-            col2: '.google.com',
-            col3: '16 dní',
-            col4: 'Používá se pro úpravu výběru reklam na základě google informací.'
-          }
+          cookie_table: [
+            {
+              col1: '-',
+              col2: '-',
+              col3: '-',
+              col4: 'žádné'
+            }
           ]
         }, {
           title: 'Více informací',
